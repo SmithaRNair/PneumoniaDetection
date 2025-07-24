@@ -2,7 +2,7 @@ import streamlit as st
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
-from src.config import MODEL_PATH, IMG_HEIGHT, IMG_WIDTH
+from config import MODEL_PATH, IMG_HEIGHT, IMG_WIDTH
 
 model = load_model(MODEL_PATH)
 

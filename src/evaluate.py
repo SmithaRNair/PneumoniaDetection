@@ -4,7 +4,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-from onfig import MODEL_PATH
+from config import MODEL_PATH
 
 def evaluate_model():
     _, _, test_gen = get_data_generators()

@@ -1,14 +1,14 @@
 import numpy as np
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
+from keras.models import load_model
+from keras.preprocessing import image
 import os
-from src.config import MODEL_PATH, IMAGE_SIZE
+from config import MODEL_PATH, IMAGE_SIZE
 
 def load_and_prepare_image(img_path, target_size=IMAGE_SIZE):
     img = image.load_img(img_path, target_size=target_size)
     img_array = image.img_to_array(img)
-    img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
-    img_array /= 255.0  # Normalize
+    img_array = np.expand_dims(img_array, axis=0)  
+    img_array /= 255.0  
     return img_array
 
 def predict_image(img_path):
