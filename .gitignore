@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.h5
+env1/
+.ipynb_checkpoints/
+saved_models/
